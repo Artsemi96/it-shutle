@@ -1,0 +1,83 @@
+html {
+    color: #000;
+    font-size: 16px;
+}
+
+.title {
+    border-top: 1px solid #000;
+    color: #000;
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center;
+    padding-top: 45px;
+    margin: 45px 0 15px;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 18px; 
+    font-weight: bold; 
+    text-align: center;
+    margin: 15px 0;
+}
+
+.removed {
+    text-decoration: line-through;
+}
+
+.link {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.link a {
+    color: green;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+.test-box {
+    padding: 50px 0;
+    background: gray;
+}
+
+.text-box__list {
+    padding: 0 30px;
+}
+
+.text-box__list li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.text-box__list a {
+    display: inline-block; 
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.0);
+    border: 1px solid red;
+    color: red;
+    text-decoration: none;
+    will-change: backgroun-color, color;
+    transition: background-color ease 0.3s, color ease 0.3s;
+}
+
+.text-box__list a:hover {
+    background: red;
+    color: #fff;
+}
+
+.container {
+    padding: 10px 0;
+    margin: 0 auto; /* расположить блок по центру */
+    max-width: 700px;
+    min-height: 100vh;
+    background: #fff;
+}
+
+/* селектор по части класса */
+[class^=test-box] {
+    padding: 5px;
+    color: #fff;
+}
